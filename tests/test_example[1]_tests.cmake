@@ -1,0 +1,5 @@
+add_test([=[ExampleTest.BasicAssertion]=]  /Users/landerwells/Developer/cmake_dev_flake_template/target/test_example [==[--gtest_filter=ExampleTest.BasicAssertion]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ExampleTest.BasicAssertion]=]  PROPERTIES WORKING_DIRECTORY /Users/landerwells/Developer/cmake_dev_flake_template/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[ExampleTest.AnotherTest]=]  /Users/landerwells/Developer/cmake_dev_flake_template/target/test_example [==[--gtest_filter=ExampleTest.AnotherTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ExampleTest.AnotherTest]=]  PROPERTIES WORKING_DIRECTORY /Users/landerwells/Developer/cmake_dev_flake_template/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  test_example_TESTS ExampleTest.BasicAssertion ExampleTest.AnotherTest)

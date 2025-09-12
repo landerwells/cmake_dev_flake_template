@@ -1,0 +1,5 @@
+if(EXISTS "/Users/landerwells/Developer/cmake_dev_flake_template/tests/test_example[1]_tests.cmake")
+  include("/Users/landerwells/Developer/cmake_dev_flake_template/tests/test_example[1]_tests.cmake")
+else()
+  add_test(test_example_NOT_BUILT test_example_NOT_BUILT)
+endif()
