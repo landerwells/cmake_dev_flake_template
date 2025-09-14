@@ -7,4 +7,30 @@ current plan of attack
 - eventually once on github, create a script that will generate a directory and replace the project name with the desired name, and use the desired version of C++, and finally cd into it, build the flake, and build the repo
 
 
-cmake -B build
+# Build
+
+```bash
+mkdir -p build
+cd build
+cmake ..
+cmake --build .
+```
+
+# Run
+
+```bash
+./build/MyProject
+```
+
+# Test
+
+```bash
+cd build
+ctest
+```
+
+# Clean
+
+```bash
+rm -rf build
+```
